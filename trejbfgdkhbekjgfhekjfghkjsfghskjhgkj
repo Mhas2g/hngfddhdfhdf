@@ -1,0 +1,389 @@
+-- Bear alpha by pradityaf#9019
+-- thx for using this gui!
+ 
+--[[ key bind 
+    auto farm = C
+    auto win = F
+    nofog = E
+    walkspeed = Q
+--]]
+ 
+-- Instances:
+ 
+local bear = Instance.new("ScreenGui")
+local frm = Instance.new("Frame")
+local ws = Instance.new("TextLabel")
+local nofog = Instance.new("TextLabel")
+local autowin = Instance.new("TextLabel")
+local autofarm = Instance.new("TextLabel")
+local clos = Instance.new("TextButton")
+local blyat = Instance.new("TextLabel")
+local cr = Instance.new("TextLabel")
+local lul = Instance.new("TextLabel")
+local lul2 = Instance.new("TextLabel")
+local lul3 = Instance.new("TextLabel")
+local lul4 = Instance.new("TextLabel")
+local USTEALUGAYYY = Instance.new("TextLabel")
+local opn = Instance.new("TextButton")
+ 
+--Properties:
+ 
+bear.Name = "bear"
+bear.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+bear.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+bear.ResetOnSpawn = false
+ 
+frm.Name = "frm"
+frm.Parent = bear
+frm.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+frm.BackgroundTransparency = 0.550
+frm.BorderSizePixel = 0
+frm.Position = UDim2.new(0.682332098, 0, 0.627724111, 0)
+frm.Size = UDim2.new(0, 241, 0, 171)
+frm.Visible = false
+ 
+ws.Name = "ws"
+ws.Parent = frm
+ws.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ws.BackgroundTransparency = 1.000
+ws.BorderSizePixel = 0
+ws.Position = UDim2.new(0, 0, 0.00715222768, 0)
+ws.Size = UDim2.new(0, 139, 0, 22)
+ws.Font = Enum.Font.SourceSans
+ws.Text = "Press Q to WalkSpeed"
+ws.TextColor3 = Color3.fromRGB(0, 0, 0)
+ws.TextScaled = true
+ws.TextSize = 14.000
+ws.TextWrapped = true
+ 
+nofog.Name = "nofog"
+nofog.Parent = frm
+nofog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nofog.BackgroundTransparency = 1.000
+nofog.BorderSizePixel = 0
+nofog.Position = UDim2.new(0, 0, 0.152847588, 0)
+nofog.Size = UDim2.new(0, 139, 0, 22)
+nofog.Font = Enum.Font.SourceSans
+nofog.Text = "Press E to NoFog"
+nofog.TextColor3 = Color3.fromRGB(0, 0, 0)
+nofog.TextScaled = true
+nofog.TextSize = 14.000
+nofog.TextWrapped = true
+ 
+autowin.Name = "autowin"
+autowin.Parent = frm
+autowin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autowin.BackgroundTransparency = 1.000
+autowin.BorderSizePixel = 0
+autowin.Position = UDim2.new(0, 0, 0.298542947, 0)
+autowin.Size = UDim2.new(0, 139, 0, 22)
+autowin.Font = Enum.Font.SourceSans
+autowin.Text = "Press F to AutoWin"
+autowin.TextColor3 = Color3.fromRGB(0, 0, 0)
+autowin.TextScaled = true
+autowin.TextSize = 14.000
+autowin.TextWrapped = true
+ 
+autofarm.Name = "autofarm"
+autofarm.Parent = frm
+autofarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autofarm.BackgroundTransparency = 1.000
+autofarm.BorderSizePixel = 0
+autofarm.Position = UDim2.new(0, 0, 0.450860858, 0)
+autofarm.Size = UDim2.new(0, 139, 0, 22)
+autofarm.Font = Enum.Font.SourceSans
+autofarm.Text = "Press C to AutoFarm"
+autofarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+autofarm.TextScaled = true
+autofarm.TextSize = 14.000
+autofarm.TextWrapped = true
+ 
+clos.Name = "clos"
+clos.Parent = frm
+clos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clos.BackgroundTransparency = 1.000
+clos.Position = UDim2.new(0.627472222, 0, 0.0154469609, 0)
+clos.Size = UDim2.new(0, 79, 0, 170)
+clos.Font = Enum.Font.Fantasy
+clos.Text = "CLOSE"
+clos.TextColor3 = Color3.fromRGB(255, 0, 0)
+clos.TextScaled = true
+clos.TextSize = 14.000
+clos.TextWrapped = true
+ 
+blyat.Name = "blyat"
+blyat.Parent = frm
+blyat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+blyat.BackgroundTransparency = 1.000
+blyat.BorderSizePixel = 0
+blyat.Position = UDim2.new(0, 0, 0.737410545, 0)
+blyat.Size = UDim2.new(0, 139, 0, 22)
+blyat.Font = Enum.Font.SourceSans
+blyat.Text = "DONT STEAL BLYATT"
+blyat.TextColor3 = Color3.fromRGB(0, 0, 0)
+blyat.TextScaled = true
+blyat.TextSize = 14.000
+blyat.TextWrapped = true
+ 
+cr.Name = "cr"
+cr.Parent = frm
+cr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cr.BackgroundTransparency = 1.000
+cr.BorderSizePixel = 0
+cr.Position = UDim2.new(0, 0, 0.866065562, 0)
+cr.Size = UDim2.new(0, 139, 0, 22)
+cr.Font = Enum.Font.SourceSans
+cr.Text = "made by pradityaf#9019"
+cr.TextColor3 = Color3.fromRGB(0, 0, 0)
+cr.TextScaled = true
+cr.TextSize = 14.000
+cr.TextWrapped = true
+ 
+lul.Name = "lul"
+lul.Parent = frm
+lul.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lul.BackgroundTransparency = 1.000
+lul.BorderSizePixel = 0
+lul.Position = UDim2.new(0, 0, 0.602907658, 0)
+lul.Size = UDim2.new(0, 139, 0, 22)
+lul.Font = Enum.Font.SourceSans
+lul.Text = "made by pradityaf#9019"
+lul.TextColor3 = Color3.fromRGB(0, 0, 0)
+lul.TextScaled = true
+lul.TextSize = 14.000
+lul.TextTransparency = 1.000
+lul.TextWrapped = true
+ 
+lul2.Name = "lul2"
+lul2.Parent = frm
+lul2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lul2.BackgroundTransparency = 1.000
+lul2.BorderSizePixel = 0
+lul2.Position = UDim2.new(0, 0, 0.602907658, 0)
+lul2.Size = UDim2.new(0, 139, 0, 22)
+lul2.Font = Enum.Font.SourceSans
+lul2.Text = "made by pradityaf#9019"
+lul2.TextColor3 = Color3.fromRGB(0, 0, 0)
+lul2.TextScaled = true
+lul2.TextSize = 14.000
+lul2.TextTransparency = 1.000
+lul2.TextWrapped = true
+ 
+lul3.Name = "lul3"
+lul3.Parent = frm
+lul3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lul3.BackgroundTransparency = 1.000
+lul3.BorderSizePixel = 0
+lul3.Position = UDim2.new(0, 0, 0.602907658, 0)
+lul3.Size = UDim2.new(0, 139, 0, 22)
+lul3.Font = Enum.Font.SourceSans
+lul3.Text = "made by pradityaf#9019"
+lul3.TextColor3 = Color3.fromRGB(0, 0, 0)
+lul3.TextScaled = true
+lul3.TextSize = 14.000
+lul3.TextTransparency = 1.000
+lul3.TextWrapped = true
+ 
+lul4.Name = "lul4"
+lul4.Parent = frm
+lul4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lul4.BackgroundTransparency = 1.000
+lul4.BorderSizePixel = 0
+lul4.Position = UDim2.new(0, 0, 0.602907658, 0)
+lul4.Size = UDim2.new(0, 139, 0, 22)
+lul4.Font = Enum.Font.SourceSans
+lul4.Text = "made by pradityaf#9019"
+lul4.TextColor3 = Color3.fromRGB(0, 0, 0)
+lul4.TextScaled = true
+lul4.TextSize = 14.000
+lul4.TextTransparency = 1.000
+lul4.TextWrapped = true
+ 
+USTEALUGAYYY.Name = "U STEAL U GAYYY"
+USTEALUGAYYY.Parent = frm
+USTEALUGAYYY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+USTEALUGAYYY.BackgroundTransparency = 1.000
+USTEALUGAYYY.BorderSizePixel = 0
+USTEALUGAYYY.Size = UDim2.new(0, 200, 0, 50)
+USTEALUGAYYY.Font = Enum.Font.SourceSans
+USTEALUGAYYY.Text = ""
+USTEALUGAYYY.TextColor3 = Color3.fromRGB(0, 0, 0)
+USTEALUGAYYY.TextSize = 14.000
+ 
+opn.Name = "opn"
+opn.Parent = bear
+opn.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+opn.BackgroundTransparency = 0.700
+opn.BorderSizePixel = 0
+opn.Position = UDim2.new(0, 0, 0.74701196, 0)
+opn.Size = UDim2.new(0, 107, 0, 50)
+opn.Font = Enum.Font.Fantasy
+opn.Text = "OPEN"
+opn.TextColor3 = Color3.fromRGB(4, 255, 0)
+opn.TextScaled = true
+opn.TextSize = 14.000
+opn.TextWrapped = true
+ 
+-- Scripts:
+ 
+local function SPHXMC_fake_script() -- ws.LocalScript 
+    local script = Instance.new('LocalScript', ws)
+ 
+    local plr = game.Players.LocalPlayer.Character.Humanoid
+    local uis = game:GetService("UserInputService")
+    local key = "Q"
+    local label = script.Parent
+    local par = script.Parent.Parent.lul2
+    
+    uis.InputBegan:Connect(function(q, lol)
+        if not lol and q.KeyCode == Enum.KeyCode[key] then
+            if par.Visible == true then
+                par.Visible = false
+                print("WALKSPEED ON")
+                plr.WalkSpeed = 30
+                label.Text = "WalkSpeed ON!"
+                label.TextColor3 = Color3.new(38, 255, 0)
+            elseif par.Visible == false then
+                par.Visible = true
+                print("WALKSPEED OFF")
+                plr.WalkSpeed = 16
+                label.Text = "WalkSpeed OFF!"
+                label.TextColor3 = Color3.new(255, 0, 0)
+            end
+        end
+    end)
+    
+end
+coroutine.wrap(SPHXMC_fake_script)()
+local function ZUJK_fake_script() -- nofog.LocalScript 
+    local script = Instance.new('LocalScript', nofog)
+ 
+    local inp = game:GetService("UserInputService")
+    local label = script.Parent
+    local key = "E"
+    local par = script.Parent.Parent.lul
+    
+    inp.InputBegan:Connect(function(k, lol)
+        if not lol and k.KeyCode == Enum.KeyCode[key] then
+            if par.Visible == true then
+                par.Visible = false
+                game.Lighting.FogEnd = 100000
+                label.Text = "NoFog ON!"
+                label.TextColor3 = Color3.new(25, 255, 0)
+            elseif par.Visible == false then
+                par.Visible = true
+                game.Lighting.FogEnd = 1000
+                label.Text = "NoFog OFF!"
+                label.TextColor3 = Color3.new(255, 0, 0)
+            end
+        end
+    end)
+    
+end
+coroutine.wrap(ZUJK_fake_script)()
+local function OJXEE_fake_script() -- autowin.LocalScript 
+    local script = Instance.new('LocalScript', autowin)
+ 
+    local uis = game:GetService("UserInputService")
+    local par = script.Parent.Parent.lul3
+    local key = "F"
+    local label = script.Parent
+    local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local asu = game.Players.LocalPlayer.Character
+    
+    uis.InputBegan:Connect(function(f, lol)
+        if f.KeyCode == Enum.KeyCode[key] then
+            if par.Visible == true then
+                local brick = Instance.new("Part",workspace)
+                brick.Name = "batako"
+                brick.Color = Color3.new(255, 0, 0)
+                brick.Size = Vector3.new(40,40,40)
+                brick.Position = Vector3.new(60,60,60)
+                brick.Anchored = true
+                -- player pos
+                plr.CFrame = CFrame.new(Vector3.new(60, 70, 60))
+                par.Visible = false
+                label.Text = "AutoWin ON!"
+                label.TextColor3 = Color3.new(38, 255, 0) 
+            elseif par.Visible == false then
+                par.Visible = true
+                label.Text = "AutoWin OFF!"
+                label.TextColor3 = Color3.new(255, 0, 0)
+            end
+        end
+    end)
+end
+coroutine.wrap(OJXEE_fake_script)()
+local function MARZ_fake_script() -- autofarm.LocalScript 
+    local script = Instance.new('LocalScript', autofarm)
+ 
+    local uis = game:GetService("UserInputService")
+    local key = "C"
+    local label = script.Parent
+    local par = script.Parent.Parent.lul4
+    local coin = game.Workspace.Obby.Quidz
+    local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+    
+    uis.InputBegan:Connect(function(c)
+        if not lol and c.KeyCode == Enum.KeyCode.C then
+            if par.Visible == true then
+                par.Visible = false
+                label.Text = "AutoFarm ON!"
+                label.TextColor3 = Color3.new(38, 255, 0)
+                repeat
+                    wait(0.05)
+                    coin.CFrame = plr.CFrame
+                until par.Visible == true
+            elseif par.Visible == false then
+                par.Visible = true
+                label.Text = "AutoFarm OFF!"
+                label.TextColor3 = Color3.new(255, 0, 0)
+            end
+        end
+    end)
+end
+coroutine.wrap(MARZ_fake_script)()
+local function XRARD_fake_script() -- clos.LocalScript 
+    local script = Instance.new('LocalScript', clos)
+ 
+    local btn = script.Parent
+    
+    btn.MouseButton1Click:Connect(function()
+        script.Parent.Parent.Parent.frm.Visible = false
+        script.Parent.Parent.Parent.opn.Visible = true
+    end)
+end
+coroutine.wrap(XRARD_fake_script)()
+local function OROGV_fake_script() -- frm.rgbcr 
+    local script = Instance.new('LocalScript', frm)
+ 
+    local yes = false
+    local c = script.Parent.cr
+    
+    yes = false
+    if yes == false then
+        repeat
+            wait(0.30)
+            c.TextColor3 = Color3.new(255, 0, 0)
+            wait(0.30)
+            c.TextColor3 = Color3.new(247, 0, 255)
+            wait(0.30)
+            c.TextColor3 = Color3.new(243, 255, 0)
+            wait(0.30)
+            c.TextColor3 = Color3.new(0, 243, 255)
+            wait(0.10)
+        until yes == true
+    end
+end
+coroutine.wrap(OROGV_fake_script)()
+local function BIRRA_fake_script() -- opn.LocalScript 
+    local script = Instance.new('LocalScript', opn)
+ 
+    local btn = script.Parent
+    
+    btn.MouseButton1Click:Connect(function()
+        script.Parent.Parent.frm.Visible = true
+        btn.Visible = false
+    end)
+end
+coroutine.wrap(BIRRA_fake_script)()
